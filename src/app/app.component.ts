@@ -4,21 +4,14 @@ import { Item } from './item';
 import { NgFor, NgIf } from '@angular/common';
 import { ItemComponent } from './item/item.component';
 
-// @Component({
-//   selector: 'app-root',
-//   standalone: true,
-//   imports: [CommonModule],
-//   templateUrl: './app.component.html',
-//   styleUrl: './app.component.css'
-// })
 @Component({
-  selector: 'app-item',
-  templateUrl: './item.component.html',
-  styleUrls: ['./item.component.css'],
+  selector: 'app-root',
   standalone: true,
   imports: [
     NgFor, NgIf, ItemComponent
-  ]
+  ],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 })
 
 export class AppComponent {
